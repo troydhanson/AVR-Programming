@@ -9,6 +9,8 @@ My setup:
 * Adafruit FTDI friend (to convert serial to USB, so I can see the result)
 * Two wires connect the ATTiny85 to the FTDI Friend: GND, and pin 3 (on the ATTiny85) to RX (on the Friend)
 
+Here's an image: ![setup](ATTiny85_FTDI_Friend.jpg)
+
 The code I wrote sends an alphabetic character each second. To send a character it sends its 8 bits
 (LSB to MSB) separated by a baud delay. Well, it also needs to prepend a start bit (0) and a stop bit (1).
 See, the quiescent state of the serial line is high (or 1), so the start bit pulls it low (0). That starts
