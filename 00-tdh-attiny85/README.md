@@ -1,11 +1,10 @@
 AVR Programming 
 
 The book Make: AVR Programming by Elliot Williams is the basis for these learning projects.
-The AVR-Programming repo is a fork of his original repo that has the books' projects. I am
+This repo is a fork of his original repo that has the book's projects. I am
 adding my own notes and variations in this fork of the repository.
 
 Troy D. Hanson
-21 January 2016
 
 # Getting started
 
