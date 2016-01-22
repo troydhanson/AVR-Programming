@@ -12,9 +12,9 @@ My setup:
 Here's an image: ![setup](ATTiny85_FTDI_Friend.jpg)
 
 The code I wrote sends an alphabetic character each second. To send a character it sends its 8 bits
-(LSB to MSB) separated by a baud delay. Well, it also needs to prepend a start bit (0) and a stop bit (1).
-See, the quiescent state of the serial line is high (or 1), so the start bit pulls it low (0). That starts
-the clock ticking that expects a bit every 1/b seconds (where b is the baud rate). The convention we're 
+(LSB to MSB) separated by a baud delay. Well, it also needs to prepend a start bit (0) and append a stop bit (1).
+The quiescent state of the serial line is high (or 1), so the start bit pulls it low (0). That starts
+the clock ticking that reads a bit (the voltage, high or low) every 1/b seconds (where b is the baud rate). The convention we're 
 speaking is called 8N1 which means 8 data bits, no parity bit and 1 stop bit.
 
 To build and run the program, run make and sudo make flash. Wire the pins as described. Plug the FTDI Friend
