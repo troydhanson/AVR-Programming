@@ -5,5 +5,7 @@ of MAKE: AVR Programming by Elliot Williams. This breaks the six-pin ISP connect
 to the proper pins on the ATMega328. It sits over the chip on a breadboard with the pins
 going down around the outside perimeter of the chip.
 
+    sudo apt install avrdude avr-gcc avr-libc
     sudo avrdude -c usbtiny -p m328p
+
 
